@@ -1761,7 +1761,7 @@ def create_gradio_interface():
 
 async def main():
     api_port = 8088
-    gradio_port = 7860
+    gradio_port = 7868
 
 
     print(f"Starting API server on port {api_port}")
@@ -1783,4 +1783,4 @@ app = demo.app
 
 if __name__ == "__main__":
     initialize_data()
-    demo.launch(server_port=7860, share=True)
+    demo.launch(server_port=7868, share=True)
