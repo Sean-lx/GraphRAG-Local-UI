@@ -1775,7 +1775,7 @@ async def main():
 
     print(f"Starting Gradio app on port {gradio_port}")
     # Launch the Gradio app
-    demo.launch(server_port=gradio_port, share=True)
+    demo.launch(server_port=gradio_port, share=False)
 
 
 demo = create_gradio_interface()
@@ -1783,4 +1783,4 @@ app = demo.app
 
 if __name__ == "__main__":
     initialize_data()
-    demo.launch(server_port=7868, share=True)
+    demo.launch(server_port=7868, share=False)
